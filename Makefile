@@ -15,13 +15,13 @@ $(info $$SOURCES is [${SOURCES}])
 $(info $$OBJECTS is [${OBJECTS}])
 
 %.o %.mod %.smod: %.f90
-        $(FC) -o $*.o $<
+		$(FC) -o $*.o $<
 
 main: $(OBJECTS) $(APPLICATION)
 
 $(APPLICATION): $(OBJECTS)
-        $(LINKER) $(OBJECTS) -o $(APPLICATION)
+		$(LINKER) $(OBJECTS) -o $(APPLICATION)
 
 .PHONY:  
 clean:
-        -rm -f *.o *.mod *.smod main $(APPLICATION)
+		-rm -f *.o *.mod *.smod main $(APPLICATION)
