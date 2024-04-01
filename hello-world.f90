@@ -13,7 +13,7 @@ program hello
   END IF
 
   y = (x-5)**2 + 1
-  PRINT '((a))', "epoch 1:"
+  PRINT '((a))', "epoch 0:"
   PRINT '((a), (f0.2))',  "y=",  y
 
 end program hello
