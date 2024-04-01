@@ -14,6 +14,6 @@ program hello
 
   y = (x-5)**2 + 1
   PRINT '((a))', "epoch 1:"
-  PRINT '((a), (f0.2))',  "objective_metric=",  y
+  PRINT '((a), (f0.2))',  "y=",  y
 
 end program hello
