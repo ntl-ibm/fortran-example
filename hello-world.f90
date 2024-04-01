@@ -12,6 +12,10 @@ program hello
     READ(arg, '(f10.0)') x
   END IF
 
+  ! pretend this takes a while
+  ! possible bug in metrics collection that expects the container to stay running
+  CALL sleep(5)
+
   y = (x-5)**2 + 1
   PRINT '((a))', "epoch 0:"
   PRINT '((a), (f0.2))',  "y=",  y
